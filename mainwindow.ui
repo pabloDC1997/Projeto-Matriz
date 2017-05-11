@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Systema de Matrizes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image : url(:i/home/puc/Downloads/ProjetoMatrizTP2/con.ico) 
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Matriz A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonApagarM1">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>210</y>
+      <width>71</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Apagar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCriarM1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>71</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Criar</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditResultadoM1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>161</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="placeholderText">
+     <string>Matriz A </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Matriz B</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>161</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEditQLinhasM2">
+       <property name="placeholderText">
+        <string>Quantidade de linhas</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditQColunasM2">
+       <property name="placeholderText">
+        <string>Quantidade de colunas</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButtonApagarM2">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>210</y>
+      <width>71</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Apagar</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditResultadoM2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>120</y>
+      <width>161</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="placeholderText">
+     <string>Matriz B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCriarM2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>210</y>
+      <width>71</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Criar</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditSaidaSoma">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>260</y>
+      <width>161</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="placeholderText">
+     <string>Resultante...</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>161</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEditQLinhasM1">
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="placeholderText">
+        <string>Quantidade de linhas</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditQColunasM1">
+       <property name="placeholderText">
+        <string>Quantidade de colunas</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetSaida">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>50</y>
+      <width>271</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="autoScrollMargin">
+     <number>14</number>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>true</bool>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>68</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>35</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>40</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>A = B</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>A&lt;&gt;B</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>É triangular sup:</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>É triangular inf:</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>É simetrica:</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>É identidade:</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>É ortogonal:</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>É permutação:</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Matriz A</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Matriz B</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>242</y>
+      <width>161</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButtonPotenciacaoB">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Potênciação </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditPotenciacaoaB">
+       <property name="placeholderText">
+        <string>Ex: 2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonTranspostaB">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Transposta</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_3">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <item row="0" column="0" colspan="2">
+        <widget class="QPushButton" name="pushButtonMultiplicarPorB">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Multiplicar por: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLineEdit" name="lineEditConstanteB">
+         <property name="placeholderText">
+          <string>Ex: 2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>241</y>
+      <width>161</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButtonPotenciacaoA">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Potênciação </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditPotenciacaoA">
+       <property name="placeholderText">
+        <string>Ex: 2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonTranspostaA">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Transposta</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_4">
+       <item row="0" column="0" colspan="2">
+        <widget class="QPushButton" name="pushButtonMultiplicarPorA">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Multiplicar por: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLineEdit" name="lineEditConstanteA">
+         <property name="placeholderText">
+          <string>Ex: 2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>20</y>
+      <width>271</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Informações das Matrizes</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>118</y>
+      <width>161</width>
+      <height>92</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButtonAdicinar">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Somar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButtonMultiplicar">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Multiplicar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButtonSubtrair">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Subtrair</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>240</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Matriz resultante</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>161</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Operações entre  </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>matrizes</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>832</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEditQLinhasM1</tabstop>
+  <tabstop>lineEditQColunasM1</tabstop>
+  <tabstop>lineEditQLinhasM2</tabstop>
+  <tabstop>lineEditQColunasM2</tabstop>
+  <tabstop>textEditResultadoM1</tabstop>
+  <tabstop>pushButtonApagarM2</tabstop>
+  <tabstop>textEditResultadoM2</tabstop>
+  <tabstop>pushButtonCriarM2</tabstop>
+  <tabstop>textEditSaidaSoma</tabstop>
+  <tabstop>pushButtonApagarM1</tabstop>
+  <tabstop>pushButtonCriarM1</tabstop>
+  <tabstop>tableWidgetSaida</tabstop>
+  <tabstop>pushButtonAdicinar</tabstop>
+  <tabstop>pushButtonMultiplicar</tabstop>
+  <tabstop>pushButtonSubtrair</tabstop>
+  <tabstop>pushButtonPotenciacaoB</tabstop>
+  <tabstop>lineEditPotenciacaoaB</tabstop>
+  <tabstop>pushButtonTranspostaB</tabstop>
+  <tabstop>pushButtonMultiplicarPorB</tabstop>
+  <tabstop>lineEditConstanteB</tabstop>
+  <tabstop>pushButtonPotenciacaoA</tabstop>
+  <tabstop>lineEditPotenciacaoA</tabstop>
+  <tabstop>pushButtonTranspostaA</tabstop>
+  <tabstop>pushButtonMultiplicarPorA</tabstop>
+  <tabstop>lineEditConstanteA</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEditQLinhasM1</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEditQColunasM1</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditQColunasM1</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonCriarM1</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>135</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditQLinhasM2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEditQColunasM2</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>503</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditQColunasM2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonCriarM2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>407</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditConstanteA</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonMultiplicarPorA</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditConstanteB</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonMultiplicarPorB</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>414</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditPotenciacaoA</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonPotenciacaoA</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditPotenciacaoaB</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButtonPotenciacaoB</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/imagens">
+        <file>add.png</file>
+        <file>division.png</file>
+        <file>mult.png</file>
+        <file>minus.png</file>
+    </qresource>
+</RCC>
